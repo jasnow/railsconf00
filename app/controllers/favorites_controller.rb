@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
-  before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
+  before_filter :authenticate, :only => [:index, :edit, :update,
+    :destroy]
   # GET /favorites
   # GET /favorites.json
   def index
@@ -45,12 +46,11 @@ class FavoritesController < ApplicationController
 
     respond_to do |format|
       if @favorite.save
-        AdminMailer.submission(@favorite).deliver
-        format.html { redirect_to thanks_favorites_url }
-        format.json { render json: @favorite, status: :created, location: @favorite }
+        createmailer(favoritep)
       else
         format.html { render action: "new" }
-        format.json { render json: @favorite.errors, status: :unprocessable_entity }
+        format.json { render json: @favorite.errors,
+          status: :unprocessable_entity }
       end
     end
   end
@@ -62,11 +62,13 @@ class FavoritesController < ApplicationController
 
     respond_to do |format|
       if @favorite.update_attributes(params[:favorite])
-        format.html { redirect_to @favorite, notice: 'Favorite was successfully updated.' }
+        format.html { redirect_to @favorite,
+          notice: 'Favorite was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @favorite.errors, status: :unprocessable_entity }
+        format.json { render json: @favorite.errors,
+          status: :unprocessable_entity }
       end
     end
   end
@@ -81,5 +83,12 @@ class FavoritesController < ApplicationController
       format.html { redirect_to favorites_url }
       format.json { head :no_content }
     end
+  end
+
+  def createmailer(favoritep)
+    AdminMailer.submission(favoritep).deliver
+    format.html { redirect_to thanks_favorites_url }
+    format.json { render json: favoritep, status: :created,
+      location: favoritep }
   end
 end
