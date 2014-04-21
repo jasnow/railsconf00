@@ -7,15 +7,8 @@ gem 'sqlite3'
 gem 'thin'
 gem 'jquery-rails'
 
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
-
-  gem 'uglifier'
-end
+gem 'uglifier'
+gem 'coffee-script'
 
 group :development do
   gem 'codesake-dawn', :require => false
