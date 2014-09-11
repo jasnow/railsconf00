@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
         if Rails.env.production?
           username == ENV['HTTP_USER'] && password == ENV['HTTP_PASSWORD']
         else
-          username == "foo" && password == "bar"
+          secure_compare(username, "foo") && secure_compare(password, "bar")
         end
       end
     end
