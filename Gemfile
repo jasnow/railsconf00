@@ -11,7 +11,7 @@ gem 'uglifier'
 gem 'coffee-script'
 
 group :development do
-  gem 'codesake-dawn', :require => false
+  gem 'dawn', :require => false
 end
 
 # To use ActiveModel has_secure_password
