@@ -8,7 +8,8 @@ gem 'thin'
 gem 'jquery-rails'
 gem 'uglifier'
 gem 'coffee-script'
+gem 'overcommit'
 
 group :development do
-  gem 'dawnscanner', :require => false
+  gem 'dawnscanner', require: false
 end
