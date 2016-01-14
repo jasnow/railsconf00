@@ -112,7 +112,7 @@ GEM
     do_sqlite3 (0.10.16)
       data_objects (= 0.10.16)
     erubis (2.7.0)
-    eventmachine (1.0.9)
+    eventmachine (1.0.9.1)
     execjs (2.6.0)
     fastercsv (1.5.5)
     ffi (1.9.10)
