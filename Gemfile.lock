@@ -189,7 +189,7 @@ GEM
     stringex (1.5.1)
     sys-uname (1.0.2)
       ffi (>= 1.0.0)
-    terminal-table (1.5.2)
+    terminal-table (1.6.0)
     thin (1.7.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
