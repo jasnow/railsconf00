@@ -194,7 +194,7 @@ GEM
     stringex (1.5.1)
     sys-uname (1.0.2)
       ffi (>= 1.0.0)
-    terminal-table (1.7.1)
+    terminal-table (1.7.2)
       unicode-display_width (~> 1.1.1)
     thin (1.7.0)
       daemons (~> 1.0, >= 1.0.9)
@@ -228,4 +228,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.12.5
+   1.13.0
