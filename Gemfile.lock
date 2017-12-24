@@ -57,7 +57,7 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     cvss (0.99.0)
-    daemons (1.2.5)
+    daemons (1.2.6)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
