@@ -61,7 +61,7 @@ class GuestsController < ApplicationController
     @guest = Guest.find(params[:id])
 
     respond_to do |format|
-      if @guest.update_attributes(params[:guest])
+      if @guest.update(params[:guest])
         format.html { redirect_to @guest,
           notice: 'Guest was successfully updated.' }
         format.json { head :no_content }

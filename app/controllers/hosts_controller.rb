@@ -61,7 +61,7 @@ class HostsController < ApplicationController
     @host = Host.find(params[:id])
 
     respond_to do |format|
-      if @host.update_attributes(params[:host])
+      if @host.update(params[:host])
         format.html { redirect_to @host,
           notice: 'Host was successfully updated.' }
         format.json { head :no_content }
