@@ -61,7 +61,7 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.find(params[:id])
 
     respond_to do |format|
-      if @favorite.update_attributes(params[:favorite])
+      if @favorite.update(params[:favorite])
         format.html { redirect_to @favorite,
           notice: 'Favorite was successfully updated.' }
         format.json { head :no_content }
