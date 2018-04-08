@@ -56,7 +56,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-    crass (1.0.3)
+    crass (1.0.4)
     cvss (0.99.0)
     daemons (1.2.6)
     data_mapper (1.2.0)
