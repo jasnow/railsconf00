@@ -64,7 +64,7 @@ GEM
       sqlite3
       sys-uname
       terminal-table
-    erubi (1.7.1)
+    erubi (1.8.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
     ffi (1.9.25)
