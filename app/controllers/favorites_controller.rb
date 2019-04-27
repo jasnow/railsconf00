@@ -1,5 +1,5 @@
 class FavoritesController < ApplicationController
-  before_filter :authenticate, :only => [:index, :edit, :update,
+  before_action :authenticate, :only => [:index, :edit, :update,
     :destroy]
   # GET /favorites
   # GET /favorites.json
