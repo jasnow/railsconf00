@@ -7,7 +7,6 @@ gem 'sqlite3'
 gem 'thin'
 gem 'jquery-rails'
 gem 'uglifier'
-gem 'coffee-script'
 gem 'overcommit'
 
 group :development do

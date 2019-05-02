@@ -59,10 +59,6 @@ GEM
     builder (3.2.3)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
     cvss (0.99.0)
@@ -182,7 +178,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
   dawnscanner
   jquery-rails
   overcommit
