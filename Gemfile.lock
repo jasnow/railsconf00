@@ -108,7 +108,6 @@ GEM
     overcommit (0.57.0)
       childprocess (>= 0.6.3, < 5)
       iniparse (~> 1.4)
-    pg (1.2.3)
     ptools (1.4.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -180,7 +179,6 @@ DEPENDENCIES
   dawnscanner
   jquery-rails
   overcommit
-  pg
   rails (= 6.0.3.3)
   sqlite3
   thin
