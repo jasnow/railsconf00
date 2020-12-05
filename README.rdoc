@@ -102,7 +102,7 @@ with a IRB prompt in the server window. Here you can do things like:
   >> @posts.inspect
   => "[#<Post:0x14a6be8
           @attributes={"title"=>nil, "body"=>nil, "id"=>"1"}>,
-       #<Post:0x14a6620
+       #<Post:0x14a6621
           @attributes={"title"=>"Rails", "body"=>"Only ten..", "id"=>"2"}>]"
   >> @posts.first.title = "hello from a debugger"
   => "hello from a debugger"
