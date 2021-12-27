@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '6.1.4.4'
+#gem 'rails', '7.0.0'
+gem "rails", github: "rails/rails", branch: "7-0-stable"
 
 #HID: gem 'pg' # HID on 10/3/2020
 gem 'sqlite3'
