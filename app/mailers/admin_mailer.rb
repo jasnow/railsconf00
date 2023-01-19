@@ -10,6 +10,6 @@ class AdminMailer < ActionMailer::Base
     @thing = thing
 
     mail to: "chapambrose@gmail.com",
-         subject: "Somebody Submitted a #{thing.class.to_s}"
+      subject: "Somebody Submitted a #{thing.class}"
   end
 end

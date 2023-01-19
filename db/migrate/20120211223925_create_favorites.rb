@@ -5,7 +5,7 @@ class CreateFavorites < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :website
       t.text :description
-      t.boolean :approved, :null => false, :default => true
+      t.boolean :approved, null: false, default: true
 
       t.timestamps
     end

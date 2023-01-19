@@ -1,5 +1,5 @@
 class GuestsController < ApplicationController
-  before_action :authenticate, :only => [:index, :edit, :update,
+  before_action :authenticate, only: [:index, :edit, :update,
     :destroy, :show]
   # GET /guests
   # GET /guests.json
@@ -49,8 +49,10 @@ class GuestsController < ApplicationController
         createmailer(@guest)
       else
         format.html { render action: "new" }
-        format.json { render json: @guest.errors,
-          status: :unprocessable_entity }
+        format.json {
+          render json: @guest.errors,
+            status: :unprocessable_entity
+        }
       end
     end
   end
@@ -62,13 +64,17 @@ class GuestsController < ApplicationController
 
     respond_to do |format|
       if @guest.update(params[:guest])
-        format.html { redirect_to @guest,
-          notice: 'Guest was successfully updated.' }
+        format.html {
+          redirect_to @guest,
+            notice: "Guest was successfully updated."
+        }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @guest.errors,
-          status: :unprocessable_entity }
+        format.json {
+          render json: @guest.errors,
+            status: :unprocessable_entity
+        }
       end
     end
   end
@@ -88,7 +94,9 @@ class GuestsController < ApplicationController
   def createmailer(guestp)
     AdminMailer.submission(guestp).deliver
     format.html { redirect_to thanks_guests_url }
-    format.json { render json: guestp, status: :created,
-      location: guestp }
+    format.json {
+      render json: guestp, status: :created,
+        location: guestp
+    }
   end
 end

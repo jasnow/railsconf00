@@ -6,7 +6,7 @@ class CreateGuests < ActiveRecord::Migration[5.2]
       t.string :twitter
       t.string :phone
       t.text :bio
-      
+
       t.timestamps
     end
   end

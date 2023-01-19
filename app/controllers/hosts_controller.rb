@@ -1,5 +1,5 @@
 class HostsController < ApplicationController
-  before_action :authenticate, :only => [:index, :edit, :update,
+  before_action :authenticate, only: [:index, :edit, :update,
     :destroy, :show]
   # GET /hosts
   # GET /hosts.json
@@ -49,8 +49,10 @@ class HostsController < ApplicationController
         createmailer(@host)
       else
         format.html { render action: "new" }
-        format.json { render json: @host.errors,
-          status: :unprocessable_entity }
+        format.json {
+          render json: @host.errors,
+            status: :unprocessable_entity
+        }
       end
     end
   end
@@ -62,13 +64,17 @@ class HostsController < ApplicationController
 
     respond_to do |format|
       if @host.update(params[:host])
-        format.html { redirect_to @host,
-          notice: 'Host was successfully updated.' }
+        format.html {
+          redirect_to @host,
+            notice: "Host was successfully updated."
+        }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @host.errors,
-          status: :unprocessable_entity }
+        format.json {
+          render json: @host.errors,
+            status: :unprocessable_entity
+        }
       end
     end
   end
@@ -88,7 +94,9 @@ class HostsController < ApplicationController
   def createmailer(hostp)
     AdminMailer.submission(hostp).deliver
     format.html { redirect_to thanks_hosts_url }
-    format.json { render json: hostp, status: :created,
-      location: hostp }
+    format.json {
+      render json: hostp, status: :created,
+        location: hostp
+    }
   end
 end
