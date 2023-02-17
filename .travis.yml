@@ -7,3 +7,4 @@ before_install: gem update --system
 
 before_script: bundle exec rake db:migrate
 cache: bundler
+script: COVERAGE="yes" rake
