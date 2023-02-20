@@ -1,4 +1,4 @@
-[![Easy "Ruby on Rails CI"](https://github.com/jasnow/railsconf00/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/jasnow/railsconf00/actions/workflows/rubyonrails.yml)
+![Easy "Ruby on Rails CI"](https://github.com/jasnow/railsconf00/actions/workflows/rubyonrails.yml/badge.svg)
 
 == Welcome to Rails
 
