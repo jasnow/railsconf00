@@ -26,7 +26,7 @@ jobs:
         run: bin/rails db:schema:load
 
       - name:
-        run: bin/rake
+        run: COVERAGE="yes" bin/rake
 
   lint:
     runs-on: ubuntu-latest
