@@ -1,3 +1,5 @@
+[![Easy "Ruby on Rails CI"](https://github.com/jasnow/railsconf00/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/jasnow/railsconf00/actions/workflows/rubyonrails.yml)
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
