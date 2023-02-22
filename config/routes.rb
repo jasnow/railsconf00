@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get "/sponsors", to: "pages#sponsor"
   get "/usergroups", to: "pages#usergroups"
 
+# all your other routes
+  get '*unmatched', to: 'application#not_found_method', via: :all
+
   resources :favorites do
     collection do
       get "thanks"
