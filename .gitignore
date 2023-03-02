@@ -16,3 +16,4 @@
 config/secrets.yml
 /coverage.data
 /coverage/
+node_modules/
