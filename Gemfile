@@ -13,10 +13,8 @@ group :development do
   gem "dawnscanner", require: false
 end
 
-group :test do
-  gem 'simplecov', require: false
-end
-
 gem "standard", group: [:development, :test]
 gem "ruby_audit"
 gem "spektr"
+
+gem 'simplecov', require: false, group: :test

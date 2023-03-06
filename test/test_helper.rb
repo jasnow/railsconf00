@@ -1,3 +1,12 @@
+require 'simplecov'
+if ENV["COVERAGE"]
+  SimpleCov.start 'rails' do
+    puts "Adding simplecov"
+    enable_coverage :branch
+    primary_coverage :branch
+  end
+end
+
 # To use simplecov, do this: COVERAGE=true rake
 require 'simplecov'
 SimpleCov.start if ENV['COVERAGE']
