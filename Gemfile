@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 gem "rails", "7.0.8"
 
+gem 'bigdecimal'
+gem 'mutex_m'
+
 # HID: gem 'pg' # HID on 10/3/2020
 gem "sqlite3"
 gem "thin"
