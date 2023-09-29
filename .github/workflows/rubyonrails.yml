@@ -33,6 +33,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
+    env:
+      RAILS_ENV: test
+      BUNDLE_FORCE_RUBY_PLATFORM: "true"
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
