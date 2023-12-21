@@ -117,7 +117,7 @@ GEM
       concurrent-ruby (~> 1.0)
     iniparse (1.5.0)
     io-console (0.7.1)
-    irb (1.10.1)
+    irb (1.11.0)
       rdoc
       reline (>= 0.3.8)
     jquery-rails (4.6.0)
@@ -165,7 +165,7 @@ GEM
       racc
     pastel (0.8.0)
       tty-color (~> 0.5)
-    psych (5.1.1.1)
+    psych (5.1.2)
       stringio
     ptools (1.5.0)
     racc (1.7.3)
