@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
 gem "rails", "7.1.2"
-
 gem 'bigdecimal'
 gem 'mutex_m'
+gem 'net-smtp'
+gem 'drb'
 
 # HID: gem 'pg' # HID on 10/3/2020
 gem "sqlite3"
