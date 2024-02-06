@@ -329,7 +329,7 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.6.12)
+    zeitwerk (2.6.13)
 
 PLATFORMS
   aarch64-linux
@@ -359,4 +359,4 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
-   2.5.5
+   2.5.6
