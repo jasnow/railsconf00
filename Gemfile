@@ -7,7 +7,7 @@ gem 'net-smtp'
 gem 'drb'
 
 # HID: gem 'pg' # HID on 10/3/2020
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 gem "thin"
 gem "jquery-rails"
 gem "terser"
