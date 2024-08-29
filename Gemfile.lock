@@ -149,7 +149,7 @@ GEM
     mini_portile2 (2.8.7)
     minitest (5.25.1)
     mutex_m (0.2.0)
-    net-imap (0.4.14)
+    net-imap (0.4.15)
       date
       net-protocol
     net-pop (0.1.2)
@@ -380,4 +380,4 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
-   2.5.17
+   2.5.18
