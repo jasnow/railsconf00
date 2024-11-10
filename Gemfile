@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "8.0.0.rc2"
+gem "rails", "8.0.0"
 gem 'bigdecimal'
 gem 'mutex_m'
 gem 'net-smtp'
