@@ -160,26 +160,26 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.2)
+    nokogiri (1.18.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.2-aarch64-linux-gnu)
+    nokogiri (1.18.3-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-aarch64-linux-musl)
+    nokogiri (1.18.3-aarch64-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm-linux-gnu)
+    nokogiri (1.18.3-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm-linux-musl)
+    nokogiri (1.18.3-arm-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm64-darwin)
+    nokogiri (1.18.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-darwin)
+    nokogiri (1.18.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-gnu)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-musl)
+    nokogiri (1.18.3-x86_64-linux-musl)
       racc (~> 1.4)
-    overcommit (0.66.0)
+    overcommit (0.67.0)
       childprocess (>= 0.6.3, < 6)
       iniparse (~> 1.4)
       rexml (>= 3.3.9)
@@ -241,7 +241,7 @@ GEM
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
-    rexml (3.4.0)
+    rexml (3.4.1)
     rubocop (1.71.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -349,7 +349,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.7.1)
+    zeitwerk (2.7.2)
 
 PLATFORMS
   aarch64-linux-gnu
@@ -381,4 +381,4 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
-   2.6.3
+   2.6.4
